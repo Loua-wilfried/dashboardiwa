@@ -17,12 +17,12 @@ const CheckoutSuccess = () => {
 
   return (
     <Container>
-      <h2>Checkout Successful</h2>
-      <p>Your order might take some time to process.</p>
-      <p>Check your order status at your profile after about 10mins.</p>
+      <h2>Paiement réussi</h2>
+      <p>Votre commande peut prendre un certain temps à traiter.</p>
+      <p>Vérifiez l'état de votre commande sur votre profil après environ 10 minutes.</p>
       <p>
-        Incase of any inqueries contact the support at{" "}
-        <strong>support@onlineshop.com</strong>
+      En cas de questions, contactez le support au{" "}
+        <strong>directiongenerale@prumad.com</strong>
       </p>
     </Container>
   );

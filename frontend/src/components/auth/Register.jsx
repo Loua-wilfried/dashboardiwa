@@ -31,11 +31,11 @@ const Register = () => {
   return (
     <>
       <StyledForm onSubmit={handleSubmit}>
-        <h2>Register</h2>
+        <h2>je crée mon compte</h2>
         <input
           type="text"
-          placeholder="name"
-          onChange={(e) => setUser({ ...user, name: e.target.value })}
+          placeholder="nom"
+          onChange={(e) => setUser({ ...user, nom: e.target.value })}
         />
         <input
           type="email"
@@ -44,11 +44,11 @@ const Register = () => {
         />
         <input
           type="password"
-          placeholder="password"
+          placeholder="mot de passe"
           onChange={(e) => setUser({ ...user, password: e.target.value })}
         />
         <button>
-          {auth.rigisterStatus === "pending" ? "Submitting..." : "Register"}
+          {auth.rigisterStatus === "pending" ? "Submitting..." : "Envoyer"}
         </button>
         {auth.registerStatus === "rejected" ? (
           <p>{auth.registerError}</p>

@@ -19,7 +19,7 @@ const Home = () => {
     <div className="home-container">
       {status === "success" ? (
         <>
-          <h2>New Arrivals</h2>
+          <h2>les livreurs</h2>
           <div className="products">
             {data &&
               data?.map((product) => (
@@ -38,9 +38,9 @@ const Home = () => {
           </div>
         </>
       ) : status === "pending" ? (
-        <p>Loading...</p>
+        <p>Chargement...</p>
       ) : (
-        <p>Unexpected error occured...</p>
+        <p>Une erreur inattendue s'est produite...</p>
       )}
     </div>
   );

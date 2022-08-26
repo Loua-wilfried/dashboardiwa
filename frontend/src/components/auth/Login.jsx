@@ -37,12 +37,12 @@ const Login = () => {
           onChange={(e) => setUser({ ...user, email: e.target.value })}
         />
         <input
-          type="password"
-          placeholder="password"
+          type="mot de passe"
+          placeholder="mot de passe"
           onChange={(e) => setUser({ ...user, password: e.target.value })}
         />
         <button>
-          {auth.loginStatus === "pending" ? "Submitting..." : "Login"}
+          {auth.loginStatus === "pending" ? "Submitting..." : "Connexion"}
         </button>
         {auth.loginStatus === "rejected" ? <p>{auth.loginError}</p> : null}
       </StyledForm>

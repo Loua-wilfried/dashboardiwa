@@ -1,6 +1,6 @@
 const Orders = () => {
-  return <h2>Orders</h2>;
+  return <h2>Commandes</h2>;
 };
 
 export default Orders;
-<h2>Orders</h2>;
+<h2>Commandes</h2>;

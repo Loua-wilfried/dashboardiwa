@@ -14,7 +14,7 @@ const NavBar = () => {
   return (
     <nav className="nav-bar">
       <Link to="/">
-        <h2>OnlineShop</h2>
+        <h2>Iwa livraison</h2>
       </Link>
       <Link to="/cart">
         <div className="nav-bag">
@@ -37,7 +37,7 @@ const NavBar = () => {
         <Links>
           {auth.isAdmin ? (
             <div>
-              <Link to="/admin/summary">Admin</Link>
+              <Link to="/admin/summary">Administrateur</Link>
             </div>
           ) : null}
           <div
@@ -51,8 +51,8 @@ const NavBar = () => {
         </Links>
       ) : (
         <AuthLinks>
-          <Link to="/login">Login</Link>
-          <Link to="register">Register</Link>
+          <Link to="/login">j'ai deja un compte</Link>
+          <Link to="register">Je crée mon compte</Link>
         </AuthLinks>
       )}
     </nav>

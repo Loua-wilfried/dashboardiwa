@@ -5,12 +5,12 @@ import { useSelector } from "react-redux";
 const Dashboard = () => {
   const auth = useSelector((state) => state.auth);
 
-  if (!auth.isAdmin) return <p>Access denied. Not an Admin!</p>;
+  if (!auth.isAdmin) return <p>Accès refusé. Pas un administrateur!</p>;
 
   return (
     <StyledDashboard>
       <SideNav>
-        <h3>Quick Links</h3>
+        <h3>Liens rapides</h3>
         <NavLink
           className={({ isActive }) =>
             isActive ? "link-active" : "link-inactive"
